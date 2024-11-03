@@ -1,0 +1,21 @@
+@use 'src/assets/styles/helper/mixins' as *;
+
+.wrapper {
+  background: lightslategray;
+  @include flexCenter();
+  padding: 20px;
+  gap: 20px;
+
+  a {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use 'src/assets/styles/helper/mixins' as *;
+
+.wrapper {
+  @include flexColumn();
+  gap: 20px;
+}

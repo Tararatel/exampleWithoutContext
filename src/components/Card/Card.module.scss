@@ -1,0 +1,10 @@
+@use 'src/assets/styles/helper/mixins' as *;
+
+.wrapper {
+  @include flexColumn();
+  gap: 5px;
+  width: 285px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

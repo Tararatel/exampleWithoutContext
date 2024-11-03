@@ -1,0 +1,48 @@
+@use 'src/assets/styles/helper/mixins' as *;
+
+.form {
+  width: 420px;
+  display: flex;
+	flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  @include flexColumn();
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 40px;
+}
+
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 100px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  outline: none;
+  background: grey;
+  color: #fff;
+  transition:
+    color 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+
+  &:hover {
+    background: lightgray;
+    color: #222;
+  }
+}
